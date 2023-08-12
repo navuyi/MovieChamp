@@ -7,7 +7,11 @@ const RootNavigator = () => {
   const Stack = createStackNavigator()
 
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Stack.Screen name='Landing' component={Landing} />
       <Stack.Screen name='Signin' component={Signin} />
     </Stack.Navigator>
